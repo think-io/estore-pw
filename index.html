@@ -174,11 +174,11 @@
                   <circle cx="90" cy="35" r="10" fill="#fff7ed" stroke="#f59e0b"/>
                 </svg>
               </div> -->
-              <img src="white3.webp" alt="Classic Dry Petha" class="w-full h-full object-cover">
-              <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-white/90 to-transparent">
+              <img src="white3.webp" alt="Classic Dry Petha" class="w-full h-full object-cover hover:opacity-90 hover:scale-105 transition-all duration-300">
+              <!-- <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-white/90 to-transparent"> -->
                 <!-- <div class="font-semibold text-slate-800">Classic Dry Petha</div> -->
-                <div class="text-xs text-slate-600">Crystal-like, mildly sweet</div>
-              </div>
+                <!-- <div class="text-xs text-slate-600">Crystal-like, mildly sweet</div> -->
+              <!-- </div> -->
             </div>
             <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-amber-100 to-orange-50 border border-orange-200">
               <!-- <div class="absolute inset-0 grid place-content-center">
@@ -188,11 +188,11 @@
                   <rect x="26" y="30" width="68" height="14" rx="7" fill="#fbbf24"/>
                 </svg>
               </div> -->
-              <img src="Angoori_Kesar_Petha.webp" alt="Kesar Petha" class="w-full h-full object-cover">
-              <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-white/90 to-transparent">
-                <!-- <div class="font-semibold text-slate-800">Kesar Petha</div> -->
+              <img src="Angoori_Kesar_Petha.webp" alt="Kesar Petha" class="w-full h-full object-cover hover:opacity-90 hover:scale-105 transition-all duration-300">
+              <!-- <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-white/90 to-transparent">
+                <div class="font-semibold text-slate-800">Kesar Petha</div>
                 <div class="text-xs text-slate-600">Saffron aroma, golden hue</div>
-              </div>
+              </div> -->
             </div>
             <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-emerald-50 to-green-100 border border-green-200">
               <!-- <div class="absolute inset-0 grid place-content-center">
@@ -202,11 +202,11 @@
                   <circle cx="60" cy="35" r="8" fill="#059669"/>
                 </svg>
               </div> -->
-              <img src="pan-petha-sweet-1000x1000.png" alt="Paan Petha" class="w-full h-full object-cover">
-              <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-white/90 to-transparent">
-                <!-- <div class="font-semibold text-slate-800">Paan Petha</div> -->
+              <img src="pan-petha-sweet-1000x1000.png" alt="Paan Petha" class="w-full h-full object-cover hover:opacity-90 hover:scale-105 transition-all duration-300">
+              <!-- <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-white/90 to-transparent">
+                <div class="font-semibold text-slate-800">Paan Petha</div>
                 <div class="text-xs text-slate-600">Refreshing betel-inspired</div>
-              </div>
+              </div> -->
             </div>
             <div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-stone-50 to-amber-50 border border-stone-200">
               <!-- <div class="absolute inset-0 grid place-content-center">
@@ -216,11 +216,11 @@
                   <rect x="25" y="35" width="70" height="12" rx="6" fill="#111827"/>
                 </svg>
               </div> -->
-              <img src="chocolate-1000x1000.webp" alt="Chocolate Petha" class="w-full h-full object-cover">
-              <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-white/90 to-transparent">
+              <img src="chocolate-1000x1000.webp" alt="Chocolate Petha" class="w-full h-full object-cover hover:opacity-90 hover:scale-105 transition-all duration-300">
+              <!-- <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-white/90 to-transparent">
                 <div class="font-semibold text-slate-800">Chocolate Petha</div>
                 <div class="text-xs text-slate-600">Indulgent cocoa finish</div>
-              </div>
+              </div> -->
             </div>
           </div>
           <!-- <p class="mt-3 text-xs text-white/90">Note: These are visual placeholders. Add your real photos via the link tool above.</p> -->
@@ -390,7 +390,8 @@
       <div class="order-2 md:order-1">
         <h2 class="text-3xl font-extrabold text-slate-900">Our Story</h2>
         <p class="mt-4 text-slate-700 leading-relaxed">
-          Born in the lanes of Agra, pethewala carries the legacy of traditional Petha-making, perfected over generations.
+          Explore the authentic flavors of Agra with our exquisite range of Petha. At pethewala.com, we craft each piece using traditional methods and the finest ingredients to ensure superior quality and taste. Experience the perfect blend of tradition and taste, now available at your fingertips. Order today for a delightful treat!
+          <br>
           We craft every batch with care, using time-honored methods to preserve purity, texture, and unmatched taste.
         </p>
         <div class="mt-6 grid sm:grid-cols-3 gap-4">
@@ -461,27 +462,51 @@
 
         <div class="mt-8">
           <h3 class="font-bold text-slate-900">Send a quick inquiry</h3>
-          <form id="contactForm" class="mt-3 p-4 rounded-2xl bg-white border border-orange-100 soft-shadow">
+          
+          <!-- Inquiry Form -->
+          <form id="contactForm"
+                action="https://formspree.io/f/xblzrdze" 
+                method="POST"
+                class="mt-3 p-4 rounded-2xl bg-white border border-orange-100 soft-shadow">
+            
             <div class="grid sm:grid-cols-2 gap-3">
               <div>
                 <label class="text-sm text-slate-600">Name</label>
-                <input required type="text" name="name" class="mt-1 w-full px-3 py-2 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-300" placeholder="Your name" />
+                <input required type="text" name="name" 
+                      class="mt-1 w-full px-3 py-2 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-300" 
+                      placeholder="Your name" />
               </div>
               <div>
                 <label class="text-sm text-slate-600">Phone Number</label>
-                <input required type="tel" name="phone" class="mt-1 w-full px-3 py-2 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-300" placeholder="+91 ..." />
+                <input required type="tel" name="phone" 
+                      class="mt-1 w-full px-3 py-2 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-300" 
+                      placeholder="+91 ..." />
               </div>
               <div class="sm:col-span-2">
                 <label class="text-sm text-slate-600">Message</label>
-                <textarea required name="message" rows="4" class="mt-1 w-full px-3 py-2 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-300" placeholder="Your query or order details"></textarea>
+                <textarea required name="message" rows="4" 
+                          class="mt-1 w-full px-3 py-2 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-300" 
+                          placeholder="Your query or order details"></textarea>
               </div>
             </div>
+            
             <div class="mt-4 flex items-center gap-3">
-              <button class="px-5 py-2.5 rounded-lg bg-orange-600 text-white font-semibold hover:bg-orange-700">Send Inquiry</button>
+              <button type="submit"
+                      class="px-5 py-2.5 rounded-lg bg-orange-600 text-white font-semibold hover:bg-orange-700">
+                Send Inquiry
+              </button>
               <span id="formStatus" class="text-sm text-slate-600"></span>
             </div>
-            <p class="mt-2 text-xs text-slate-500">This is a demo inquiry form. We’ll display a success message here.</p>
           </form>
+
+          <!-- WhatsApp Quick Inquiry Button -->
+          <!-- <div class="mt-4">
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hello, I want to place an order for Petha." 
+              target="_blank"
+              class="px-5 py-2.5 rounded-lg bg-green-600 text-white font-semibold hover:bg-green-700 inline-block">
+              📲 Send Inquiry on WhatsApp
+            </a>
+          </div> -->
         </div>
 
         <!-- <div class="mt-8">
@@ -761,12 +786,40 @@
     <div class="border-t border-emerald-800/40">
       <div class="max-w-7xl mx-auto px-4 py-4 text-xs text-emerald-100/80 flex items-center justify-between">
         <span>Copyright © pethewala.com 2025</span>
-        <span>Crafted with ❤️ in Agra</span>
+        <span>Made In India. Crafted with ❤️ in Agra</span>
       </div>
     </div>
   </footer>
 
   <script>
+    document.getElementById("contactForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      
+      const form = e.target;
+      const status = document.getElementById("formStatus");
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          status.textContent = "✅ Thank you! We’ll contact you soon.";
+          status.style.color = "green";
+          form.reset();
+        } else {
+          status.textContent = "❌ Oops! Something went wrong. Try WhatsApp instead.";
+          status.style.color = "red";
+        }
+      } catch (error) {
+        status.textContent = "⚠️ Network error. Please try again later.";
+        status.style.color = "red";
+      }
+    });
+
+
     // Smooth scroll for internal links
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', e => {
