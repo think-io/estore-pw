@@ -15,21 +15,6 @@
   <style>
     /* Subtle pattern overlay for hero */
     .pattern {
-    // Header CTAs
-    document.getElementById('ctaCallHero')?.addEventListener('click', () => openCall('+919068883002'));
-    document.getElementById('ctaWhatsAppHero')?.addEventListener('click', () => openWhatsApp('+919068883002', 'Hi! I'm interested in ordering Petha.'));
-    document.getElementById('ctaWhatsAppTop')?.addEventListener('click', () => openWhatsApp('+919068883002'));
-    
-    // Footer WhatsApp button
-    document.getElementById('footerWhatsApp')?.addEventListener('click', () => openWhatsApp('+919068883002', 'Hello! I found you through your website. I\'d like to order some Petha.'));
-
-    // Card action buttonsr CTAs
-    document.getElementById('ctaCallHero')?.addEventListener('click', () => PopenCall('+919068883002'));
-    document.getElementById('ctaWhatsAppHero')?.addEventListener('click', () => openWhatsApp('+919068883002', 'Hi! I'm interested in ordering Petha.'));
-    document.getElementById('ctaWhatsAppTop')?.addEventListener('click', () => openWhatsApp('+919068883002'));
-    
-    // Footer WhatsApp button
-    document.getElementById('footerWhatsApp')?.addEventListener('click', () => openWhatsApp('+919068883002', 'Hello! I found you through your website. I\'d like to order some Petha.'));rn {
       background-image:
         radial-gradient(rgba(255,255,255,0.12) 1px, transparent 1px),
         radial-gradient(rgba(255,255,255,0.10) 1px, transparent 1px);
@@ -53,10 +38,10 @@
     "telephone":"+919068883002",
     "address":{
       "@type":"PostalAddress",
-      "streetAddress":"123, Sadar Bazaar",
+      "streetAddress":"Gali No 03, K.K. Nagar, Shobha Nagar, Foundry Nagar",
       "addressLocality":"Agra",
       "addressRegion":"UP",
-      "postalCode":"282001",
+      "postalCode":"282006",
       "addressCountry":"IN"
     },
     "openingHoursSpecification":[
@@ -539,7 +524,7 @@
             </svg>
             <div class="absolute bottom-2 left-2 right-2 bg-white/90 backdrop-blur rounded-lg border border-slate-200 p-2 text-xs">
               <div class="font-semibold text-slate-800">Pethewala Agra</div>
-              <div class="text-slate-600">123, Sadar Bazaar, Agra, UP 282001</div>
+              <div class="text-slate-600">Gali No 03, K.K. Nagar, Shobha Nagar, Foundry Nagar, Agra, Uttar Pradesh 282006</div>
               <div class="text-slate-600">Hours: 9:00 AM – 9:00 PM (All days)</div>
             </div>
           </div>
@@ -548,7 +533,7 @@
           <button id="openMaps" class="px-4 py-2 rounded-lg bg-orange-600 text-white hover:bg-orange-700">View on Google Maps</button>
           <button id="copyAddress" class="px-4 py-2 rounded-lg border border-slate-300 hover:bg-slate-50 text-slate-700">Copy Address</button>
         </div>
-        <p class="mt-2 text-xs text-slate-500">Note: Live Google Map embed isn’t shown here due to platform limits. Click “View on Google Maps” to open it.</p>
+        <!-- <p class="mt-2 text-xs text-slate-500">Note: Live Google Map embed isn’t shown here due to platform limits. Click “View on Google Maps” to open it.</p> -->
 
         <!-- Social Connect -->
         <div id="social" class="mt-8">
@@ -854,7 +839,16 @@
     };
 
     // Header CTAs
-    document.getElementById('ctaCallHero')?.addEventListener('click', () => PopenCall('+919068883002'));
+    document.getElementById('ctaCallHero')?.addEventListener('click', () => openCall('+919068883002'));
+    document.getElementById('ctaWhatsAppHero')?.addEventListener('click', () => openWhatsApp('+919068883002', "Hi! I'm interested in ordering Petha."));
+    document.getElementById('ctaWhatsAppTop')?.addEventListener('click', () => openWhatsApp('+919068883002'));
+    
+    // Footer WhatsApp button
+    document.getElementById('footerWhatsApp')?.addEventListener('click', () => openWhatsApp('+919068883002', "Hello! I found you through your website. I'd like to order some Petha."));
+
+
+    // Header CTAs
+    document.getElementById('ctaCallHero')?.addEventListener('click', () => openCall('+919068883002'));
     document.getElementById('ctaWhatsAppHero')?.addEventListener('click', () => openWhatsApp('+919068883002', 'Hi! I’m interested in ordering Petha.'));
     document.getElementById('ctaWhatsAppTop')?.addEventListener('click', () => openWhatsApp('+919068883002'));
 
@@ -904,11 +898,11 @@
 
     // Store locator actions
     document.getElementById('openMaps')?.addEventListener('click', () => {
-      const q = encodeURIComponent('Pethewala, 123 Sadar Bazaar, Agra, UP 282001');
-      window.open(`https://www.google.com/maps/search/?api=1&query=${q}`, '_blank');
+      window.open('https://maps.app.goo.gl/Fi9wMEUBjz2FzBSb9', '_blank');
     });
+    
     document.getElementById('copyAddress')?.addEventListener('click', async () => {
-      const address = 'Pethewala, 123, Sadar Bazaar, Agra, UP 282001 • 9:00 AM – 9:00 PM';
+      const address = 'Pethewala, Gali No 03, K.K. Nagar, Shobha Nagar, Foundry Nagar, Agra, Uttar Pradesh 282006 • 9:00 AM – 9:00 PM';
       try {
         await navigator.clipboard.writeText(address);
         alert('Address copied!');
@@ -1002,5 +996,6 @@
       setInterval(nextTestimonial, 6000);
     });
   </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'981cb213c5838f92',t:'MTc1ODMyMjc4OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
+  <!-- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'981cb213c5838f92',t:'MTc1ODMyMjc4OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body> -->
 </html>
